@@ -9,74 +9,13 @@ var scoreDisplay = document.querySelector("#scoreMessage");
 var h1 = document.querySelector("h1");
 var h2 = document.querySelector("h2");
 var resetButton = document.querySelector("#reset");
-//var modeButtons = document.querySelectorAll(".mode");
 
 init();
 
 function init() {
-    // mode buttons event listeners
-    /*setupModeButtons();*/
-    //keepScore();
     setupSquares();
     reset();
 }
-
-
-/*
-var numClicked = 0;
-squares.onclick = function() {
-        numClicked++;
-
-        if (numClicked = 1) {
-            score = score + 50;
-        }
-        if (numClicked = 2) {
-            score = score + 30;
-        }
-        if (numClicked = 3) {
-            score = score + 10;
-        }
-        if (numClicked = 4) {
-            score = score - 5;
-        }
-        if (numClicked = 5) {
-            score = score - 10;
-        }
-        if (numClicked = 6) {
-            score = score - 15;
-        }
-}
-*/
-
-/*// grab number of clicks on sqaure
-var numClicked = 0;
-for (var i = 0; i < squares.length; i++) {
-    // add click listeners to squares   
-    squares[i].addEventListener("click", keepScore);
-    numClicked++;
-}
-
-function keepScore() {
-    if (numClicked = 1) {
-        score = score + 50;
-    }
-    if (numClicked = 2) {
-        score = score + 30;
-    }
-    if (numClicked = 3) {
-        score = score + 10;
-    }
-    if (numClicked = 4) {
-        score = score - 5;
-    }
-    if (numClicked = 5) {
-        score = score - 10;
-    }
-    if (numClicked = 6) {
-        score = score - 15;
-    }
-
-}*/
 
 //sets up squares, and defines what happens when pick right color or wrong color 
 function setupSquares() {
@@ -99,25 +38,6 @@ function setupSquares() {
         });
     }
 }
-
-/*function setupModeButtons() {
-  for (var i = 0; i < modeButtons.length; i++) {
-    modeButtons[i].addEventListener("click", function() {
-      // this takes care of removing the select class
-      // for both the easy and hard mode
-      modeButtons[0].classList.remove("selected");
-      modeButtons[1].classList.remove("selected");
-      // this is used to target and add
-      // the selected class to the element that is clicked
-      this.classList.add("selected");
-
-      this.textContent === "Easy" ? numOfSquares = 3 : numOfSquares = 6;
-
-      reset();
-
-    });
-  }
-}*/
 
 //resets stuff when game over and hit New Color 
 function reset() {
