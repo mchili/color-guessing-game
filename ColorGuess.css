@@ -1,0 +1,84 @@
+body {
+    background: #0e2f44;
+    font-family: 'Glober', 'Nexa Free', 'Arial', sans-serif;
+    margin: 0 auto;
+}
+h1 {
+    background: #00ced1;
+    color: white;
+    font-size: 50px;
+    margin: 0;
+    padding-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2#rgbValue {
+    background: #00ced1;
+    color: white;
+    font-size: 70px;
+    lower-line-height: 10px;
+    margin: 0;
+    padding-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#scoreMessage {
+    color: #313338;
+    font-size: 20px;
+    font-weight: 700;
+    height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+#bar {
+    background: white;
+    height: 35px;
+    text-align: center;
+}
+#message {
+    color: black;
+    display: inline-block;
+    font-weight: 700;
+    width: 20%;
+}
+.selected {
+    background: #0e2f44;
+    color: white;
+}
+button {
+    border: none;
+    background: none;
+    color: #313338;
+    font-weight: 700;
+    height: 100%; //make button nice
+    letter-spacing: 1px;
+    font-size: 20px;
+    outline: none;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+button:hover {
+    color: white;
+    background: #0e2f44;
+}
+.square {
+    /*make % so scable when move screen */
+    width: 30%;
+    background: white;
+    float: left;
+    margin: 1.5%;
+    padding-top: 30%;
+    border-radius: 15%;
+    transition: 1.0s;
+    -webkit-transition: 1.0s;
+    -moz-transition: 1.0s;
+}
+#squareContainer {
+    max-width: 600px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+}
